@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Treasure</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        section {
+            border: 2px solid black;
+            height: 500px;
+            margin: 10px;
+        }
+        
+        .sec3 {
+            border: solid;
+        }
+        
+        body {
+            background-color: white;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: sans-serif;
+        }
+        
+        .carousel-cell1 {
+            width: 30%;
+            margin-right: 10%;
+            margin-left: 0%;
+            margin-top: 5%;
+            border-radius: 5px;
+            border: solid;
+            text-align: center;
+            padding-right: 5%;
+            padding-left: 5%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        
+        .carousel-cell2 {
+            width: 30%;
+            margin-left: 0%;
+            margin-top: 5%;
+            margin-right: 10%;
+            border-radius: 5px;
+            border: solid;
+            text-align: center;
+            padding-right: 5%;
+            padding-left: 5%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        
+        .carousel-cell3 {
+            width: 30%;
+            margin-left: 0%;
+            margin-top: 5%;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: solid;
+            text-align: center;
+            padding-right: 5%;
+            padding-left: 5%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        
+        .carousel {
+            padding-top: 4%;
+        }
+        
+        .sec2 {
+            padding-bottom: 5%;
+        }
+        
+        .sec3_div1 p {
+            margin-top: 10%;
+            margin-right: 35%;
+            text-align: right;
+            float: right;
+        }
+        
+        .sec3_div1 img {
+            border: solid;
+            position: absolute;
+            left: 900px;
+            top: 1960px;
+        }
+        
+        .icons {
+            background-color: rgb(150, 150, 150/25%);
+            padding: 10px 15px;
+            border-radius: 30px;
+            margin: 5px 10px;
+        }
+        
+        .content {
+            width: 1000px;
+            position: absolute;
+            position: absolute;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .par {
+            letter-spacing: 1.2px;
+            line-height: 30px;
+            border: solid;
+            width: fit-content;
+            margin-top: 5%;
+            margin-left: 5%;
+            right: 60%;
+            height: 300px;
+            padding-top: 45px;
+            border-radius: 5%;
+            padding-left: 2%;
+            padding-right: 2%;
+            font-size: large;
+        }
+        
+        .f1 {
+            text-align: center;
+        }
+        
+        .login:hover {
+            background-color: rgb(234, 96, 96);
+        }
+        
+        .body1 {
+            background-color: rgb(140, 161, 161);
+        }
+        
+        .scenry {
+            background-image: url("img/Travel-Intel-Blog-Header-13.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .offer1 {
+            border: solid;
+            width: fit-content;
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+        
+        .offer {
+            width: 100%;
+        }
+        
+        .form {
+            border: solid;
+            width: fit-content;
+            right: 870px;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        
+        .grid {
+            display: grid;
+        }
+        
+        .h3 {
+            margin-top: 3%;
+            letter-spacing: 2px;
+        }
+        
+        .icons {
+            position: absolute;
+            left: 810px;
+            top: 2060px;
+        }
+        
+        .icons:hover {
+            background-color: rgb(230, 221, 221);
+        }
+        
+        .icons a {
+            padding: 10px 15px;
+            border-radius: 30px;
+        }
+        
+        .icons a :hover {
+            background-color: rgba(3, 0, 0, 0.25);
+        }
+        
+        .icons i {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="body1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" background-color="#003b95">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/Level1-task1/code.html#"><img src="img/logo-color.png" alt="Travel Treasure" width="80px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://127.0.0.1:5500/Level1-task1/code.html#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="sec1">
+            <section class="scenry">
+                <div>
+
+                    <div class="content">
+
+                        <p class="par">
+                            <b>
+                            <b><b>Welcome </b></b>to the ultimate destination for all your travel needs! <br>You've landed at the perfect spot to secure the most incredible deals for your flight, train, and bus bookings. <br>Our
+                            platform is your gateway to unbeatable offers and seamless travel arrangements. <br>Ready to embark on a journey of savings and convenience? <br>Register now to unlock a world of exclusive deals and uninterrupted access to
+                            our top-notch booking services.
+                            <br>Your next adventure awaits – <b>Sign up to continue your travel dreams with us!</b></b>
+                        </p>
+                    </div>
+
+
+
+                </div>
+
+            </section>
+        </div>
+
+
+
+
+
+
+        <div class="offer">
+
+            <section>
+                <h3 class="h3" style="text-align: center;"><b>We Offer</b></h3>
+
+                <div id="accordion" style="text-align: center;">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           <b> Group Tours</b>
+                          </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           <b> School/College Picnic</b>
+                          </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Collapsible Group Item #3
+                          </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+            </section>
+        </div>
+
+        <section class="sec2">
+            <div class="carousel" data-flickity='{ "draggable": false }'>
+                <div class="carousel-cell1">Book a Flight Ticket <br><br>Get inspired – compare and book flights with flexibility
+                    <br><br>
+                    <input type="button" value="Click">
+
+                </div>
+                <div class="carousel-cell2">Book a Train Ticket
+                    <br><br>Get inspired – compare and book flights with flexibility
+                    <br><br>
+                    <input type="button" value="Click">
+
+                </div>
+                <div class="carousel-cell3">Book a Bus Ticket
+                    <br><br>Get inspired – compare and book flights with flexibility
+                    <br><br>
+                    <input type="button" value="Click">
+
+                </div>
+
+            </div>
+            <br><br><br><br>
+            <p></p>
+        </section>
+        <section class="sec3">
+
+            <div class="sec3_div1">
+                <p><b>For More Details Contact</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Phone No.:- 987654321,&nbsp;123456789</b>
+                    <br><br> <b>Address :- </b></p>
+                <br><br> <img src="img/logo-color.png" alt="" width="80px">
+                <br><br>
+                <div class="icons">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square" aria-hidden="true"></i>FaceBook</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="#" target="_blank" rel="noopener noreferrer"> <i class="fa fa-youtube"></i>YouTube</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i>Instagram</a>
+                </div>
+            </div>
+
+
+            <div class="form">
+                <form class="f1">
+                    <h3><u>Login/Sign-in</u></h3>
+
+                    <p>User Id :- <input type="text " placeholder="Enter Your Mail Id Here "></p>
+                    <p>Password :-<input type="password"></p>
+
+
+                    <button class="login">Login</button>
+                </form>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </section>
+    </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
